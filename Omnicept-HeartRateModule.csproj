@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0-windows10.0.22621.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+        <Title>$(AssemblyName)</Title>
+        <Authors>cubic</Authors>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="VolcanicArts.VRCOSC.SDK" Version="2023.1007.0" />
+    </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="lib-client-csharp">
+      <HintPath>C:\Program Files\\HP\HP Omnicept SDK\1.14.0\bin\Release\csharp\lib-client-csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="AsyncIO">
+      <HintPath>C:\Program Files\\HP\HP Omnicept SDK\1.14.0\bin\Release\csharp\AsyncIO.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf">
+      <HintPath>C:\Program Files\\HP\HP Omnicept SDK\1.14.0\bin\Release\csharp\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="NetMQ">
+      <HintPath>C:\Program Files\\HP\HP Omnicept SDK\1.14.0\bin\Release\csharp\NetMQ.dll</HintPath>
+    </Reference>
+    <Reference Include="SemanticVersioning">
+      <HintPath>C:\Program Files\\HP\HP Omnicept SDK\1.14.0\bin\Release\csharp\SemanticVersioning.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+        <Exec Command="copy /Y &quot;$(TargetDir)$(TargetName).dll&quot; &quot;%25appdata%25\VRCOSC\assemblies\$(TargetName).dll&quot;" />
+    </Target>
+
+</Project>

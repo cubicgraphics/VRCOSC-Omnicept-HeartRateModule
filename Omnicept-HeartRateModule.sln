@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Omnicept-HeartRateModule", "Omnicept-HeartRateModule.csproj", "{C3C10138-9C76-42B6-8548-0585C3304F1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3C10138-9C76-42B6-8548-0585C3304F1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3C10138-9C76-42B6-8548-0585C3304F1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3C10138-9C76-42B6-8548-0585C3304F1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3C10138-9C76-42B6-8548-0585C3304F1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC70DBD3-FB93-47AA-8B17-F0EB899F37AE}
+	EndGlobalSection
+EndGlobal
