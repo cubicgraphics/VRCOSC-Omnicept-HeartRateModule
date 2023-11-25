@@ -1,5 +1,4 @@
-﻿using System.Reactive;
-using VRCOSC.Game.Modules;
+﻿using VRCOSC.Game.Modules;
 using VRCOSC.Game.Modules.Bases.Heartrate;
 
 namespace Omnicept_HeartRateModule
